@@ -17,3 +17,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+img {
+	width: 10%;
+	height: auto;
+	border-radius: 20px;
+}

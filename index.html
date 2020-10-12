@@ -6,10 +6,25 @@
     <title>Nashville Software School</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+<header class="logo"><img src="img/turtlelogo.jpeg"></header>
 
 <body>
+    <h1>Dear NSS</h1>
+    <h4>thoughts from Leo Rondeau</h4>
     <main id="container">
-        <p>are you working</p>
+        <div>
+            <label for="entry-date"></label>
+            <input type="date" id="start" name="trip-start" value="2020-10-13" min="2020-01-01" max="2020-31-12">
+        </div>
+        <label for="mood-select"></label>
+        <select id="mood__select">
+            <option value="">--Choose your mood--</option>
+            <option value="Sailing">Sailing</option>
+            <option value="Trailing">Trailing</option>
+            <option value="Flailing">Flailing</option>
+            <option value="Bailing">Bailing</option>
+        </select>
+
     </main>
 
     <script type="module" src="./scripts/main.js"></script>
@@ -17,4 +32,5 @@
 <footer>
     <p><a href="https://github.com/leorondeau">Leo Rondeau@GitHub</a></p>
 </footer>
+
 </html>
