@@ -23,3 +23,8 @@ img {
 	height: auto;
 	border-radius: 20px;
 }
+
+.date-mood {
+	display: flex;
+	
+}
