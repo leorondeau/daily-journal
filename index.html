@@ -10,37 +10,37 @@
 
 <body>
     <h1>Dear NSS</h1>
-    <h4>taught thoughts by Leo Rondeau</h4>
+    <h4>from Leo Rondeau</h4>
     <main id="container">
         <form>
-            <section class="date-mood">
-                <label for="entry-date">Entry Date</label>
-                <input type="date" id="start" name="trip-start" value="2020-10-13" min="2020-01-01" max="2020-31-12">
-                <label for="mood-select">Mood</label>
-                <select class="mood__select">
-                    <option value="">--</option>
-                    <option value="Sailing">Sailing</option>
-                    <option value="Trailing">Trailing</option>
-                    <option value="Flailing">Flailing</option>
-                    <option value="Bailing">Bailing</option>
-                </select>
+                <section class="date-mood">
+                    <label class="entry__date" for="entry-date">Entry Date</label>
+                    <input type="date" id="start" name="trip-start" value="2020-10-13" min="2020-01-01" max="2020-31-12">
+                    <label class="mood__select" for="mood-select">Mood</label>
+                    <select class="mood__select">
+                        <option value="">--</option>
+                        <option value="Sailing">Sailing</option>
+                        <option value="Trailing">Trailing</option>
+                        <option value="Flailing">Flailing</option>
+                        <option value="Bailing">Bailing</option>
+                    </select>
+                    <label for="key-subject">Point of this entry:</label>
+                    <input type="text" id="key-subject" name="key-subject">
+                
             </section>
-            <label for="key-subject">Point of this entry:</label>
-            <input type="text" id="key-subject" name="key-subject">
-            <fieldset>
-                <label for="entry-form"></label>
-                <textarea class="entry-form" name="journal-entry" rows="" cols=""></textarea>
-            </fieldset>
+            <h4>Summary</h4>
+            <section class="entry__form">
+                
+                <label  for="entry-form"></label>
+                <textarea name="journal-entry" rows="6" cols="100"></textarea>
+            </section>
+            <button type="button">Log it</button>
         </form>
-        <button type="button">Log it</button>
-        <div>
+        
+        <div class="previous__entries">
             <h4>Previous Entries</h4>
             <ul id="entryLog">
-                <li>entry one</li>
-                <li>entry two</li>
-                <li>entry three</li>
-                <li>entry four</li>
-                <li>entry five</li>
+                
             </ul>
         </div>
         </main>

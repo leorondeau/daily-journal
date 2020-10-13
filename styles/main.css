@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url("font-family: 'Noto Sans JP', sans-serif;");
+@import url("font-family: 'Pacifico', cursive;");
+@import url("font-family: 'Fredoka One', cursive;");
+
 
 /*Typography
 --------------------------------------------------------------*/
@@ -8,23 +12,78 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+	font-family: "Noto Sans JP", Arial, sans-serif;
+	/* font-size: 14px;
+	line-height: 1.5; */
 }
 
-h1,h2,h3,h4,h5,h6 {
+body {
+	background-color: #EEEF20;
+	padding: 1em;
+}
+
+/* h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
-}
+} */
 
+h1 {
+	color: #2B9348;
+	font-family:  'Pacifico' , cursive;
+	font-size: 60px;
+	
+	
+}
+h4 {
+	font-family: 'Noto Sans JP',Arial;
+
+}
 img {
-	width: 10%;
+	width: 90px;
 	height: auto;
 	border-radius: 20px;
 }
 
-.date-mood {
-	display: flex;
+form {
+	
 	
 }
+
+.entry__date {
+	display: flex;
+	bord
+}
+
+.mood__select {
+	display: flex;
+}
+
+
+
+
+
+.date-mood {
+	display: flex;
+	/* flex-direction: column;	
+	width: 200px; */
+	justify-content: space-evenly;
+	border-radius: 5px;
+	background-color: #55A630;
+	padding: 1em;
+	margin-bottom: 20px;
+	font-family: 'Fredoka One', cursive;
+	font-size: 20px;
+}
+
+.entry__form {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.previous__entries {
+	
+}
+
+
+
+
