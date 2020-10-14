@@ -51,7 +51,6 @@ form {
 
 .entry__date {
 	display: flex;
-	bord
 }
 
 .mood__select {
@@ -64,24 +63,37 @@ form {
 
 .date-mood {
 	display: flex;
-	/* flex-direction: column;	
-	width: 200px; */
+	flex-direction: column;	
+	width: 200px;
 	justify-content: space-evenly;
 	border-radius: 5px;
-	background-color: #55A630;
+	background-color: #AACC00;
 	padding: 1em;
 	margin-bottom: 20px;
 	font-family: 'Fredoka One', cursive;
-	font-size: 20px;
+	font-size: 15px;
+	border: 2px solid black;
 }
 
 .entry__form {
 	display: flex;
 	justify-content: flex-start;
+	border: 2px solid black;
+	width: 300px;
+	
 }
 
 .previous__entries {
+	background-color: #AACC00;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: .5em;
+	margin-top: 20px;
 	
+}
+
+h4 {
+	font-family: 'Fredoka One', cursive;
 }
 
 
