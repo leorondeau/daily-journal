@@ -2,7 +2,7 @@
 
 export const JournalEntryComponent = (entry) => {
     return `
-    <ul id="entry--${entry.id}" class="journalEntry">
+    <ul id="entry--${entry.id}" class="entryCard">
         <li>Date: ${entry.date}</li>
         <li>Concept: ${entry.conlit}</li>
         <li>Entry: ${entry.entry}</li>

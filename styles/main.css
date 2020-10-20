@@ -49,8 +49,8 @@ form {
 	
 }
 
-.entry__date {
-	display: flex;
+.entryCard {
+	margin: 1em;
 }
 
 .mood__select {

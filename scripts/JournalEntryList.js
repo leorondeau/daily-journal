@@ -6,14 +6,9 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 export const EntryListComponent = () => {
     const entryLog = document.querySelector("#entryLog")
     const entries = useJournalEntries()
-    let journalHTMLRepresentation = ""
-    for (const entry of entries) {
-
-        journalHTMLRepresentation += JournalEntryComponent(entry)
-    }
+ 
     entryLog.innerHTML +=
         `<section id ="entryLog">
-    <p>${journalHTMLRepresentation}<p>
+    <p>${entries.map(entry => JournalEntryComponent(entry)).join("")}<p>
     </section>`
 }
-
