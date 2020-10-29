@@ -7,38 +7,56 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "09/30/20",
-        concept: "CSS",
-        entry: "Worked on flexbox, furthered understanding of how to manipulate containers.",
-        mood: "trailing"
-    },
-    {
-        id: 2,
-        date: "10/05/20",
-        concept: "github workflow",
-        entry: "Completed commits, pull requests and pushes.",
-        mood: "flailing"
-    },
-    {
-        id: 3,
-        date: "10/08/20",
-        concept: "javascript bouncing ball",
-        entry: "Wrote scripts across multiple modules, importing and exporting functions plus their html representation",
-        mood: "flailing"
-    }
-]
 
+
+// export const useJournalEntries = () => {
+//     return [...journalEntries]
+// }
+//  console.log(useJournalEntries())
 /*
     You export a function that provides a version of the
     raw data in the format that you want
 */
+
+// let journalEntries = []
+// console.log("jounrnalEntries" , journalEntries)
+
+// export const useJournalEntries = () => {
+//     const sortedByDate = journalEntries.sort(
+//         (currentEntry, nextEntry) =>
+//             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
+//     )
+//     return sortedByDate
+// }
+
+// export const getEntries = () => {
+//     return fetch("http://localhost:8088/entries") 
+//     .then(response => response.json())
+//         .then(
+//             entries => {
+        
+//                 return journalEntries = entries
+                
+//             }
+//         )      
+// }
+
+
+let entries = []
+
+
 export const useJournalEntries = () => {
-    const sortedByDate = journal.sort(
-        (currentEntry, nextEntry) =>
-            Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    )
-    return sortedByDate
+    return entries.slice()
 }
+
+export const getEntries = () => {
+    return fetch('http://localhost:8088/entries')
+        .then(response => response.json())
+        .then(parsedNotes => {
+            entries = parsedNotes
+           console.log("entries in GET" , entries)
+        })
+
+}
+
+console.log("EntriesatBOT" , useJournalEntries())

@@ -1,14 +1,21 @@
-import { useJournalEntries } from "./JournalDataProvider.js"
+import { useJournalEntries ,getEntries } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
 
-
-
 export const EntryListComponent = () => {
+    
+
+    
+    return getEntries()
+    .then(()=> {
+    const entryList = useJournalEntries()
+    console.log("TEST" , entryList)
+    render(entryList)
+})}
+
+const render = (collection) => {
+
     const entryLog = document.querySelector("#entryLog")
-    const entries = useJournalEntries()
- 
     entryLog.innerHTML +=
         `<section id ="entryLog">
-    <p>${entries.map(entry => JournalEntryComponent(entry)).join("")}<p>
-    </section>`
-}
+    <p>${collection.map(entry => JournalEntryComponent(entry)).join("")}<p>
+    </section>`}

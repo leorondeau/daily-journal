@@ -1,0 +1,25 @@
+{
+    "entries" :  [   
+        {
+        "id": 1,
+        "date": "09/30/20",
+        "concept": "CSS",
+        "entry": "Worked on flexbox, furthered understanding of how to manipulate containers.",
+        "mood": "trailing"
+        },
+        {
+        "id": 2,
+        "date": "10/05/20",
+        "concept": "github workflow",
+        "entry": "Completed commits, pull requests and pushes.",
+        "mood": "flailing"
+        },
+        {
+        "id": 3,
+        "date": "10/08/20",
+        "concept": "javascript bouncing ball",
+        "entry": "Wrote scripts across multiple modules, importing and exporting functions plus their html representation",
+        "mood": "flailing"
+        }
+    ]
+}
