@@ -1,3 +1,5 @@
+import { saveEntry } from "./JournalDataProvider.js"
+
 const contentTarget = document.querySelector(".info-input")
 const eventHub = document.querySelector(".container")
 
@@ -30,17 +32,17 @@ eventHub.addEventListener("click" , event => {
     if (event.target.id === "buttonClick")
     console.log("button")
 
-    const date = document.querySelector("#journal--date").value
-    const mood = document.querySelector("#journal--mood").value
-    const concept = document.querySelector("#journal--subject").value
-    const entry = document.querySelector("#journal--entry").value
+        const date = document.querySelector("#journal--date").value
+        const mood = document.querySelector("#journal--mood").value
+        const concept = document.querySelector("#journal--subject").value
+        const entry = document.querySelector("#journal--entry").value
      
-    const entry = {
+    const newEntry = {
         date,
         mood,
         concept,
         entry
     }
-
-
+    saveEntry(newEntry)
+    // console.log("SAVED" , saveEntry())
 })
