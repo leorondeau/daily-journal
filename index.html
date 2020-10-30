@@ -11,39 +11,22 @@
 <body>
     <h1>Dear NSS</h1>
     <h4>from Leo Rondeau</h4>
-    <main id="container">
+    <main class="container">
         <form>
-                <section class="date-mood">
-                    <label class="entry__date" for="entry-date">Entry Date</label>
-                    <input type="date" id="start" name="trip-start" value="2020-10-13" min="2020-01-01" max="2020-31-12">
-                    <label class="mood__select" for="mood-select">Mood</label>
-                    <select class="mood__select">
-                        <option value="">--</option>
-                        <option value="Sailing">Sailing</option>
-                        <option value="Trailing">Trailing</option>
-                        <option value="Flailing">Flailing</option>
-                        <option value="Bailing">Bailing</option>
-                    </select>
-                    <label for="key-subject">Point of this entry:</label>
-                    <input type="text" id="key-subject" name="key-subject">
-                
+            <section class="info-input">
+
             </section>
-            <h4>Summary</h4>
-            <section class="entry__form">
-                
-                <label  for="entry-form"></label>
-                <textarea name="journal-entry" rows="6" cols="100"></textarea>
-            </section>
-            <button type="button">Log it</button>
+       
+            <button type="button" id="buttonClick">Log it</button>
         </form>
-        
+
         <div class="previous__entries">
             <h4>Previous Entries</h4>
             <ul id="entryLog">
-                
+
             </ul>
         </div>
-        </main>
+    </main>
 
     <script type="module" src="./scripts/main.js"></script>
 </body>
