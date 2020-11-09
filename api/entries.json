@@ -1,43 +1,50 @@
 {
-    "moods": [
-        {
-            "id": 1,
-            "label": "Sailing"
-        },
-        {
-            "id": 2,
-            "label": "Trailing"
-        },
-        {
-            "id": 3,
-            "label": "Flailing"
-        },
-        {
-            "id": 4,
-            "label": "Bailing"
-        }
-    ],
-    "entries": [
-        {
-            "id": 1,
-            "date": "09/30/20",
-            "concept": "CSS",
-            "entry": "Worked on flexbox, furthered understanding of how to manipulate containers.",
-            "moodId": 2
-        },
-        {
-            "id": 2,
-            "date": "10/05/20",
-            "concept": "github workflow",
-            "entry": "Completed commits, pull requests and pushes.",
-            "moodId": 3
-        },
-        {
-            "id": 3,
-            "date": "10/08/20",
-            "concept": "javascript bouncing ball",
-            "entry": "Wrote scripts across multiple modules, importing and exporting functions plus their html representation",
-            "moodId": 4
-        }
-    ]
+  "moods": [
+    {
+      "id": 1,
+      "label": "Sailing"
+    },
+    {
+      "id": 2,
+      "label": "Trailing"
+    },
+    {
+      "id": 3,
+      "label": "Flailing"
+    },
+    {
+      "id": 4,
+      "label": "Bailing"
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "date": "09/30/20",
+      "concept": "CSS",
+      "entry": "Worked on flexbox, furthered understanding of how to manipulate containers.",
+      "moodId": 2
+    },
+    {
+      "id": 2,
+      "date": "10/05/20",
+      "concept": "github workflow",
+      "entry": "Completed commits, pull requests and pushes.",
+      "moodId": 3
+    },
+    {
+      "date": "2020-10-13",
+      "moodId": 1,
+      "concept": "",
+      "entry": "",
+      "id": 3
+    },
+    {
+      "date": "2020-10-13",
+      "moodId": 3,
+      "concept": "Event Listeners",
+      "entry": "Still don't have a full grip on event listeners",
+      "id": 4
+    }
+  ]
 }
