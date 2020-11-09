@@ -31,20 +31,6 @@
       "concept": "github workflow",
       "entry": "Completed commits, pull requests and pushes.",
       "moodId": 3
-    },
-    {
-      "date": "2020-10-13",
-      "moodId": 1,
-      "concept": "",
-      "entry": "",
-      "id": 3
-    },
-    {
-      "date": "2020-10-13",
-      "moodId": 3,
-      "concept": "Event Listeners",
-      "entry": "Still don't have a full grip on event listeners",
-      "id": 4
     }
   ]
 }
