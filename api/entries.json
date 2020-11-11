@@ -26,11 +26,18 @@
       "moodId": 2
     },
     {
-      "id": 2,
-      "date": "10/05/20",
-      "concept": "github workflow",
-      "entry": "Completed commits, pull requests and pushes.",
-      "moodId": 3
+      "date": "2020-10-16",
+      "moodId": 4,
+      "concept": "Oh Man",
+      "entry": "Oh boy",
+      "id": 2
+    },
+    {
+      "date": "2020-10-16",
+      "moodId": 4,
+      "concept": "Oh Man",
+      "entry": "Oh boy",
+      "id": 3
     }
   ]
 }
