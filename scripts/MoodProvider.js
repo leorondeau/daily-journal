@@ -11,7 +11,7 @@ export const getMoods = () => {
         .then(response => response.json())
         .then(parsedMoods => {
             moods = parsedMoods
-            console.log("moods", moods)
+            // console.log("moods", moods)
         //    console.log("entries in GET" , entries)
         })
 
