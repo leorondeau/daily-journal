@@ -3,27 +3,25 @@ import { JournalEntryComponent } from "./JournalEntry.js"
 
 
 const eventHub = document.querySelector(".container")
-
+let entryList = ""
 
 eventHub.addEventListener("appStateChanged", () => EntryListComponent())
 
 export const EntryListComponent = () => {
     
-
-    
-    return getEntries()
+ getEntries()
     .then(()=> {
-    const entryList = useJournalEntries()
+      entryList = useJournalEntries()
     // console.log("TEST" , entryList)
-    render(entryList)
+    render()
 })}
 
-const render = (collection) => {
+const render = () => {
 
     const entryLog = document.querySelector("#entryLog")
     entryLog.innerHTML =
         `<section id ="entryLog">
-    <p>${collection.map(entry => JournalEntryComponent(entry)).join("")}<p>
+    <p>${entryList.map(entry => JournalEntryComponent(entry)).join("")}<p>
 
     </section>`}
 
@@ -34,16 +32,16 @@ const render = (collection) => {
             deleteEntry(id)
             .then(() =>
             {
-                const updatedEntries = useJournalEntries()
-                console.log("updatedEntries" , updatedEntries)
-                const newEntryArray = updatedEntries.map(entry => {
+                entryList = useJournalEntries()
+                
+                const newEntryArray = entryList.map(entry => {
                     
                     const newEntry = JournalEntryComponent(entry)
                     
                     return newEntry
                 }).join("")
-                console.log("entry" , newEntryArray)
-                render(newEntryArray)
+                // console.log("entry" , newEntryArray)
+                render()
             })
         }
      })  

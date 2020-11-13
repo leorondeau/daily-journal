@@ -19,25 +19,11 @@
   ],
   "entries": [
     {
-      "id": 1,
-      "date": "09/30/20",
-      "concept": "CSS",
-      "entry": "Worked on flexbox, furthered understanding of how to manipulate containers.",
-      "moodId": 2
-    },
-    {
       "date": "2020-10-16",
       "moodId": 4,
       "concept": "Oh Man",
       "entry": "Oh boy",
       "id": 2
-    },
-    {
-      "date": "2020-10-16",
-      "moodId": 4,
-      "concept": "Oh Man",
-      "entry": "Oh boy",
-      "id": 3
     }
   ]
 }
