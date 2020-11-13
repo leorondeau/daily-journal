@@ -1,5 +1,5 @@
 import { saveEntry } from "./JournalDataProvider.js"
-import { getMoods, useJournalMoods } from "./MoodProvider.js"
+import { getMoods, useJournalMoods } from "../Mood/MoodProvider.js"
 
 const contentTarget = document.querySelector(".info-input")
 const eventHub = document.querySelector(".container")
@@ -32,6 +32,7 @@ const render = (moodArray) => {
        return `<option  value="${moodObj.id}" placeholder ="Select Mood">${moodObj.label}</option>`
    })}
    </select>
+   <div class="filters></div>
    <label for="key-subject">Point of this entry:</label>
    <input type="text" id="journal--subject">
    </section>
